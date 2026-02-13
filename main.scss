@@ -10,7 +10,7 @@
     font-size: $s;
     font-weight: $fw;
 }
-@mixin control( $g, $t, $l, $ai)
+@mixin control( $g:0, $t:0, $l:0, $ai:center)
 {
     display: flex;
     gap: $g;
@@ -84,3 +84,41 @@
     margin-left: 8%;
     margin-top: 100px;
 }
+
+.blogs
+{
+    @include control(5px, 30px)
+}
+.when
+{
+    @include text-style(black, 340px, 20px, 600);
+    margin-top: 20px;
+}
+.short
+{
+    @include text-style(grey, 350px, 14px);
+    margin-top: 10px;
+}
+.minit
+{
+    @include control(10px)
+}
+.ux
+{
+    width: 115px;
+    padding: 10px;
+    height: 15px;
+    background-color: #F2F2F2;
+}
+.divv
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+.flex
+{
+    @include control(20px, 70px, 8%)
+}
+
