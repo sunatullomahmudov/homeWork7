@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+@mixin text-style($c:black, $w:400px,$s:20px,$fw:400)
+{
+    color: $c;
+    width: $w;
+    font-size: $s;
+    font-weight: $fw;
+}
+@mixin control( $g, $t, $l, $ai)
+{
+    display: flex;
+    gap: $g;
+    margin-top: $t;
+    margin-left: $l;
+    align-items: $ai;
+}
+.hbox
+{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-left: 10%;
+}
+.hbox-2
+{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    align-items: center;
+}
+.imgtext
+{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+.select
+{
+    border: none;
+    font-size: 20px;
+    
+}
+.border
+{
+    color: blue;
+    font-size: 20px;
+    border: 1px solid blue;
+    padding: 10px;
+    height: 25px;
+    width: 100px;
+    border-radius: 50px;
+    text-align: center;
+}
+.p
+{
+    @include text-style(black, 450px, 45px,700 );
+    margin-top: 10px
+}
+.lorem
+{
+    @include text-style(black, 550px, 20px, );
+    margin-top: 10px;
+}
+.lorem1
+{
+    @include text-style(grey, 550px, 18px);
+    margin-top: 7px;
+}
+.hbox2
+{
+    @include control(100px, 100px, 8%, center)
+}
+.xat
+{
+    width: 80%;
+    height: 2px;
+    background-color: rgb(215, 215, 215);
+    margin-left: 8%;
+    margin-top: 100px;
+}
