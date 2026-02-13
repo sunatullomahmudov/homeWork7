@@ -121,4 +121,29 @@
 {
     @include control(20px, 70px, 8%)
 }
-
+.s1box1
+{
+    
+}
+.box2
+{
+    display: block;
+    margin-top: 150px;
+    margin-left: 10%;
+}
+.div1
+{
+    display: flex;
+    gap: 90px;
+    margin-left: 4%;
+}
+.left
+{
+    margin-top: 70px;
+    border-left: 2px solid rgb(207, 207, 207);
+}
+.div3
+{
+    display: flex;align-items: center;gap: 10px;
+    margin-left: 10%;
+}
